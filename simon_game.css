@@ -1,0 +1,229 @@
+body, html{
+  height: 100%;
+  min-height: 100%;
+  background-color: #333;
+}
+
+*{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+  
+  font-family: 'Droid Sans', sans-serif;
+}
+
+h1, h2{
+  color: #333;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#mainBody{
+  height: 575px;
+  width: 575px;
+  /*background-color: black;*/
+  /*border: 2px solid black;*/
+  border-radius: 40%;
+  position: absolute;
+  top: 80px;
+  left: 27%; 
+}
+
+/******** COLOR PADS *************/
+#redPart, #bluePart, #yellowPart, #greenPart, #greenPart2{
+  display: inline-block;
+  height: 320px;
+  width: 320px;
+  border: 2px solid white;
+}
+
+#redPart{
+  /*
+  border-top: 260px solid transparent;
+  border-left: 260px solid transparent;
+  border-bottom: 260px solid transparent;
+  border-right: 260px solid #DC143C; #CD5C5C*/
+  
+  background-color: #DC143C;
+  z-index: 8;
+  
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+  
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#bluePart{
+  /*
+  border-top: 260px solid transparent;
+  border-left: 260px solid transparent;
+  border-bottom: 260px solid transparent;
+  border-right: 260px solid #1E90FF; #4682B4*/
+  
+  background-color: #1E90FF;
+  z-index: 6;
+  
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#yellowPart{
+  /*
+  border-top: 260px solid transparent;
+  border-left: 260px solid transparent;
+  border-bottom: 260px solid transparent;
+  border-right: 260px solid #FFD700;*/
+  
+  background-color: #FFD700;
+  z-index: 4;
+  
+  -ms-transform: rotate(135deg); /* IE 9 */
+  -webkit-transform: rotate(135deg); /* Chrome, Safari, Opera */
+  transform: rotate(135deg);
+  
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#greenPart, #greenPart2{
+  /*
+  border-top: 260px solid transparent;
+  border-left: 260px solid transparent;
+  border-bottom: 260px solid transparent;
+  border-right: 260px solid #228B22;*/
+  
+  background-color: #228B22;
+  
+  -ms-transform: rotate(-135deg); /* IE 9 */
+  -webkit-transform: rotate(-135deg); /* Chrome, Safari, Opera */
+  transform: rotate(-135deg);
+  
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.upper{
+  z-index: 9;
+  
+  clip: rect(165px, 360px, 360px, -30px);
+}
+
+.lower{
+  z-index: 2;
+  clip: rect(-30px, 360px, 165px, -30px);
+}
+
+/********** MAIN WHITE BUTTON ***********/
+#whiteButton{
+  width: 275px; 
+  height: 275px;
+  border: 30px solid #333;
+  border-radius: 50%;
+  background-color: #FFFAF0;
+  z-index: 10;
+  
+  position: absolute;
+  top: 120px;
+  right: 120px;
+  
+  text-align: center;
+}
+
+#turnsCount{
+  width: 80px;
+  height: 40px;
+  border: 2px red solid;
+  background-color: #333;
+  border-radius: 20%;
+  
+  position: absolute;
+  top: 70px;
+  left: 95px;
+}
+
+#turnsCount p{
+  color: red;
+  font-size: 20px;
+  line-height: 10px;
+}
+
+#startSwitch p{
+  color: red;
+  border: 2px solid black;
+  height: 25px;
+  width: 45px;
+  
+  line-height: 25px;
+  
+  position: absolute;
+  left: 25%;
+  top: 42%;
+}
+
+#strictSwitch p{
+  color: red;
+  border: 2px solid black;
+  height: 25px;
+  width: 45px;
+  
+  line-height: 25px;
+  
+  position: absolute;
+  left: 60%;
+  top: 42%;
+}
+
+#powerSwitch{
+  
+}
+
+#footer{
+  position: absolute;
+  bottom: -25%;
+  left: 30%;
+}
+
+#footer h2{
+  color: white;
+}
+
+/****** BLINKING AND FLASHING STUFF ********/
+.flashing{
+  box-shadow: 0px 0px 40px #fff;
+}
+
+/******** POP-UPS ************/
+.pop-up{
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 2px solid black;
+  background-color: #DCDCDC;
+  display: none;
+  text-align: center;
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  z-index: 12;
+}
+
+#restarting, #loss, #newGame{
+  top: 200px;
+}
+
+#newGameStrict{
+  top: 300px;
+}

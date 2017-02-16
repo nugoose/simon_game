@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+        <!-- css -->
+        <link rel='stylesheet' type='text/css' href='simon_game.css'>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- js -->
+        <script src='simon_game.js'></script>
+    </head>
+    
+
+    <body>
+    <!-- main body -->
+    <div id="mainBody">
+
+      <div id='redPart' class='pads'></div>
+      <div id='bluePart' class='pads'></div>
+      <div id='yellowPart' class='pads'></div>
+      <div id='greenPart' class='upper pads'></div>
+      <div id='greenPart2' class ='lower pads'></div>
+
+      <div id='whiteButton'>
+        <h1>simon</h1>
+        <div id="turnsCount"><p>_ _</p></div>
+        <div id="startSwitch"><p>start</p></div>
+        <div id="strictSwitch"><p>strict</p></div>
+        <div id="powerSwitch"></div>
+      </div>
+
+      <div id="footer">
+        <h2>made by <a href='https://nugoose.github.io/' target='_blank'><strong>nugoose</strong></a> =)</h2>
+      </div>
+
+    </div>
+
+    <!-- wrong move -->
+    <div id='wrongMove' class='pop-up'><h2>Wrong move</h2></div>
+
+    <!-- restarting sequence -->
+    <div id='restarting' class='pop-up'><h2>Restarting sequence</h2></div>
+
+    <!-- new game -->
+    <div id='newGame' class='pop-up'><h2>Starting new game</h2></div>
+
+    <!-- new (strict) game -->
+    <div id='newGameStrict' class='pop-up'><h2>Starting new (strict) game</h2></div>
+
+    <!-- win message -->
+    <div id='win' class='pop-up'><h2>You win :)</h2></div>
+
+    <!-- lose message -->
+    <div id='loss' class='pop-up'><h2>You lose :(</h2></div>
+    </body>
+    
+</html>
